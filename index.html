@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Welcome Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel='stylesheet' href='./stylesheets/style.css' />
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="col-sm-12 header">
+			<img src="https://www.bornclinic.com/wp-content/uploads/2014/08/Medical-Symbol-Icon-Blue-Small.png" />
+			Doctor Search
+
+		</div>
+<div class="content">
+	<!-- <h2>Doctor Search</h2>
+	<h4>Small Descriptive Title</h4> -->
+	<br>
+	<br>
+	<div class="guest-menu">
+		<div class="col-sm-12 box1-content">
+			<div class="login-page">
+				<div class="form">
+					<form class="login-form" method = "post" action = "/login">
+						<h1>Welcome Back</h1>
+					  <input type="text" placeholder="name" name = "name"/>
+					  <input type="password" placeholder="password" name = "password"/>
+					  <button>Sign In</button>
+					  <img class="fb-button" src="http://hercdev.io/img/facebook.png" />
+					  <p class="form-footer text-center">Not registered?<a href="#"> Create an account</a></p>
+					  <img class="google-button" src="https://i.stack.imgur.com/XzoRm.png" />
+					</form>	
+				<form class="guest-form" method = "post" action="/search">
+					<h1 id = "guest">Welcome Guest</h1>
+				  <input type="text" placeholder="Enter Your Address Or Zip Code"/>
+				  <button>Quick Unregistered Search</button>
+				  <div class = "row guest-2">
+					<p class="left col-xs-1 message"><a href="#">Login</a></p>
+				  <p class="right col-xs-offset-5">Not registered?<a href="#"> Create an account</a></p>
+				  
+				</div>
+				</form>
+				<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="col-sm-12 text-center footer">
+	2017 Full Stack School Project Team: Nikolas, Taylor, Saif, Zach
+</div>
+			
+</div>
+	<script>
+		$('.message a').click(function(){
+		$('form').animate({height: "toggle", opacity: "toggle"}, "slow",()=>{
+			console.log("now that effect has finished and callback function served we can move on")
+		});
+});
+	</script>
+</body>
+</html>
