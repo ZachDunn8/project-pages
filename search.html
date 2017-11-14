@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search page</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="search.css">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="col-sm-12 header">
+			<img src="https://www.bornclinic.com/wp-content/uploads/2014/08/Medical-Symbol-Icon-Blue-Small.png" />
+			Doctor Search
+		</div>
+		<div class="content">
+			<div class="menu">
+				<h1>Search for Doctor</h1>
+				<form action = "/search" method = "post">
+					<input type = "text" name = "zip_code" placeholder="Enter Zip Code">
+					<input type = "number" name = "per_page" placeholder="Doctor Profiles Per Page">
+					<select name="insurance">
+					<option name="placeholder">Choose Your Insurance</option>
+					<option value="Aetna">Aetna</option>
+					<option value="Cigna">Cigna</option>
+					<option value="BlueCross">Blue Cross</option>
+					</select>
+					<select name="specialty">
+					<option name="placeholder">Choose A Specialty</option>
+					<option value="Addiction">Addiction</option>
+					<option value="Dermatologist">Dermatologist</option>
+					<option value="Gastroenterologist">Gastroentologist</option>
+					<option value="OBGYN">OBGYN</option>
+					<option value="Cardiologist">Cardiologist</option>
+					<option value="Neurologist">Neurologist</option>
+					<option value="Optomotrist">Optomotrist</option>
+					<option value="Orthodontist">Orthodontist</option>
+					<option value="Pediatrician">Pediatrician</option>
+					<option value="Psycologist">Psycologist</option>
+					<option value="Psychiatrist">Psychiatrist</option>
+					</select>
+					<button type = "submit">Search Now!</button>
+				</form>
+			</div> 
+		</div>
+	</div>
+	<div class="col-sm-12 text center footer">
+		2017 Full Stack School Project Team: Nikolas, Taylor, Saif, Zach
+	</div>
+
+	
+</body>
+</html>
